@@ -1,5 +1,5 @@
 module.exports = {
-  mode: 'jit',
+  // mode: 'jit',
   purge: ['./public/**/*.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
@@ -9,5 +9,5 @@ module.exports = {
     extend: {},
   },
   // eslint-disable-next-line global-require
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 };
