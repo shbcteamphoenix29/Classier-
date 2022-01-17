@@ -1,14 +1,20 @@
 <template>
   <div>
-    <p>Landing Page</p>
+    <div class="border-t">
+      <BannerSec />
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
+import BannerSec from '@/components/app_header/BannerSec.vue';
 
 export default {
   name: 'Home',
-  components: {},
+  components: {
+    BannerSec,
+  },
 };
+
+// @ is an alias to /src
 </script>
