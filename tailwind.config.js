@@ -7,6 +7,9 @@ module.exports = {
       colors: {
         primary: '#1591AA',
       },
+      fontFamily: {
+        body: ['Space Grotesk'],
+      },
     },
   },
   variants: {

@@ -12,9 +12,6 @@
         Search
       </div>
     </div>
-    <div class="mt-5 w-full object-cover">
-      <img src="../../assets/formal-outfit.svg" class="w-full object-cover" alt="" />
-    </div>
   </div>
 </template>
 
@@ -35,6 +32,9 @@ export default {};
     // color: #000;
     font-weight: 200;
     font-size: 0.875rem;
+  }
+  input:focus {
+    border-color: #1591aa;
   }
   .header_search_icon_container {
     // background-color: rgba(52, 183, 210, 0.58);
