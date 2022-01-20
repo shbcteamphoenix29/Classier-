@@ -13,12 +13,15 @@
 </template>
 
 <script>
-import BannerSec from '@/components/app_header/BannerSec.vue';
+import BannerSec from '@/components/BannerSec.vue';
 
 export default {
   name: 'Home',
   components: {
     BannerSec,
+  },
+  created() {
+    this.$store.dispatch('products/getHotDealsProducts');
   },
 };
 
