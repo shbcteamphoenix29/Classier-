@@ -3,11 +3,11 @@
     <div class="header_search_container flex mr-12 space-x-1 mt-5">
       <input
         type="text"
-        class="input_length w-96 mr-5 rounded-md border-1 text-gray-300 border-gray-300 py-3 pl-5"
+        class="input_length w-96 mr-5 rounded-md border-1 text-gray-300 border-gray-300 py-3 pl-5 ml-12"
         placeholder="Search for Products"
       />
       <div
-        class="header_search_icon_container flex items-center p-2 rounded-md pl-11 bg-primary text-sm text-white"
+        class="header_search_icon_container flex items-center p-2 mr-5 rounded-md pl-11 bg-primary text-sm text-white"
       >
         Search
       </div>

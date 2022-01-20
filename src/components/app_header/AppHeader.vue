@@ -2,7 +2,7 @@
   <nav class="flex items-center">
     <div class="header_left_section flex items-center">
       <div>
-        <img src="../../assets/classier_logo.svg" alt="" />
+        <img src="../../assets/classier_logo.svg" class="ml-24 mr-5" alt="" />
       </div>
       <div class=""></div>
       <ul class="header_items flex capitalize ml-15">
@@ -11,7 +11,7 @@
         <li>women</li>
         <li>accessories</li>
         <li>Category</li>
-        <li class="">Category</li>
+        <li class="-mr-36">Category</li>
       </ul>
     </div>
     <div class="header_right_section flex">
