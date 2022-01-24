@@ -3,7 +3,7 @@
     <div>
       <img src="../../assets/classier_logo.svg" alt="app company logo" />
     </div>
-    <ul class="flex-grow flex justify-center space-x-6 capitalize">
+    <ul class="flex-grow flex justify-center space-x-6 capitalize font-body">
       <li class="hover:underline hover:text-primary cursor-pointer">men</li>
       <li class="hover:underline hover:text-primary cursor-pointer">Women</li>
       <li class="hover:underline hover:text-primary cursor-pointer">Kids</li>

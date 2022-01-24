@@ -16,7 +16,10 @@
       </div>
 
       <div>
-        <SkeletonTheme :loading="true" class="hot_deals_section_scrolling_wrapper space-x-6">
+        <SkeletonTheme
+          :loading="!hotDealsProducts"
+          class="hot_deals_section_scrolling_wrapper space-x-6"
+        >
           <StoreProduct v-for="product in hotDealsProducts" :key="product.id" :product="product" />
         </SkeletonTheme>
         <div class="flex justify-start mt-10 ml-3 mb-0 font-body text-2xl font-bold">
