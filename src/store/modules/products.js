@@ -1,8 +1,10 @@
 import { fetchHotDeals } from '../../api/product';
+import { fetchProductCategories } from '../../api/product';
 
 // initial state
 const initialState = () => ({
   storeHotDealsProducts: [],
+  storeProductCategories: [],
 });
 
 // getters
@@ -16,12 +18,20 @@ const actions = {
       commit('setStoreHotDealsProducts', hotDeals);
     });
   },
+  getProductCategories({ commit }) {
+    fetchProductCategories().then((productCategories) => {
+      commit('setStoreProductCategories', productCategories);
+    });
+  },
 };
 
 // mutations
 const mutations = {
   setStoreHotDealsProducts(state, products) {
     state.storeHotDealsProducts = products;
+  },
+  setStoreProductCategories(state, categories) {
+    state.storeProductCategories = categories;
   },
 };
 

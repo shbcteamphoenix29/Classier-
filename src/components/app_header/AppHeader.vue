@@ -4,12 +4,11 @@
       <img src="../../assets/classier_logo.svg" alt="app company logo" />
     </div>
     <ul class="flex-grow flex justify-center space-x-6 capitalize">
-      <li>men</li>
-      <li>kids</li>
-      <li>women</li>
-      <li>accessories</li>
-      <li>Category</li>
-      <li class="">Category</li>
+      <li class="hover:underline hover:text-primary cursor-pointer">men</li>
+      <li class="hover:underline hover:text-primary cursor-pointer">Women</li>
+      <li class="hover:underline hover:text-primary cursor-pointer">Kids</li>
+      <li class="hover:underline hover:text-primary cursor-pointer">accessories</li>
+      <li class="hover:underline hover:text-primary cursor-pointer">Contact Us</li>
     </ul>
     <div class="flex items-center space-x-8">
       <AccountIcon title="user profile" fillColor="#34B7D2" class="cursor-pointer" />

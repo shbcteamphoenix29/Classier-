@@ -4,7 +4,7 @@
       <img
         :src="product.productImage"
         :alt="product.productTitle"
-        class="w-64 h-64"
+        class="w-64 h-64 rounded-md"
         :title="product.productTitle"
       />
       <HeartIcon title="add to wishlist" class="cursor-pointer absolute top-3 right-3" />

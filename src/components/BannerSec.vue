@@ -7,7 +7,7 @@
         placeholder="Search for Products"
       />
       <div
-        class="header_search_icon_container flex items-center p-2 mr-5 rounded-md pl-11 bg-primary text-sm text-white"
+        class="header_search_icon_container flex items-center p-2 mr-5 rounded-md pl-11 bg-primary text-sm text-white cursor-pointer hover:bg-blue-600 transition ease-out duration-1000 hover:font-bold hover:font-new"
       >
         Search
       </div>
