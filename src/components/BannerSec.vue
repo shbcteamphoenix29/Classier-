@@ -1,13 +1,13 @@
 <template>
-  <div>
-    <div class="header_search_container flex mr-12 space-x-1 mt-5">
+  <div class="px-12">
+    <div class="header_search_container flex justify-between space-x-6 mt-5">
       <input
         type="text"
-        class="input_length w-96 mr-5 rounded-md border-1 text-gray-300 border-gray-300 py-3 pl-5 ml-12"
+        class="input_length w-96 rounded-md border-1 text-gray-300 border-gray-300 py-3 pl-5"
         placeholder="Search for Products"
       />
       <div
-        class="header_search_icon_container flex items-center p-2 mr-5 rounded-md pl-11 bg-primary text-sm text-white cursor-pointer hover:bg-blue-600 transition ease-out duration-1000 hover:font-bold hover:font-new"
+        class="header_search_icon_container flex items-center justify-center p-2 rounded-md bg-primary text-sm text-white cursor-pointer hover:bg-blue-600 transition ease-out duration-1000 hover:font-bold hover:font-new"
       >
         Search
       </div>
@@ -26,7 +26,7 @@ export default {};
     // background-color: #fff;
     // border: 2px solid rgb(54, 50, 50);
     background-color: white;
-    width: 1150px;
+    flex-grow: 1;
   }
   input::placeholder {
     // color: #000;

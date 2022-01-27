@@ -13,6 +13,7 @@
 
 <script>
 import { Skeleton } from 'vue-loading-skeleton';
+
 export default {
   props: {
     productType: {

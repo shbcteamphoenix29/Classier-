@@ -12,7 +12,7 @@
     <Skeleton>
       <div class="flex justify-between">
         <p class="w-1/2 truncate">{{ product.productTitle }}</p>
-        <p>${{ product.productPrice }}</p>
+        <p class="text-[#0E849C] font-semibold">${{ product.productPrice }}</p>
       </div>
     </Skeleton>
   </div>

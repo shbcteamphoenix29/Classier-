@@ -25,12 +25,14 @@
         <div class="flex justify-start mt-10 ml-3 mb-0 font-body text-2xl font-bold">
           Categories
         </div>
-        <SkeletonTheme class="categories_section_scrolling_wrapper space-x-6">
+        <SkeletonTheme
+          :loading="!getProductCategories"
+          class="categories_section_scrolling_wrapper space-x-6"
+        >
           <ProductCategory
             v-for="product in getProductCategories"
             :key="product.id"
             :productType="product"
-            :isLoading="isLoadingProduct"
           />
         </SkeletonTheme>
       </div>
