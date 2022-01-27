@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="w-full pt-10 h-96 white relative font-body">
+    <div class="w-full pt-10 bg-white border-t h-96 relative">
       <div class="mt-10">
         <img
           src="../../assets/classier_logo.svg"
-          class="absolute left-24 top- w-60 h-60"
+          class="absolute left-24 top-3 w-60 h-60"
           alt="app_company_logo"
         />
         <div>
@@ -44,12 +44,47 @@
           </div> -->
         </div>
       </div>
+      <!-- <div class="flex flex-col">
+        <img src="../../assets/classier_logo.svg" class="absolute h-60 w-60 top-3 left-28" alt="" />
+        <div v-for="category in categories" :key="category" class="-ml-96 mt-0 pt-2">
+          {{ category }}
+        </div>
+      </div> -->
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      categories: ['Tops', 'Bottoms', 'Shoes', 'Skirts', 'Dresses', 'Jumpsuits'],
+      services: ['Order status', 'Contact', 'Shipping', 'Return policy & Exchanges', 'FAQs'],
+      aboutClassier: ['About', 'Sell'],
+      socialMediaIcons: [{ name: 'facebook' }],
+    };
+  },
+};
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.footer_categories {
+  margin-left: -380px;
+  margin-top: 5px;
+}
+
+.footer_service {
+  margin-left: 50px;
+  margin-top: -198px;
+}
+
+.sm_handles {
+  margin-left: 850px;
+  margin-top: -70px;
+}
+
+.about_classier {
+  margin-left: 450px;
+  margin-top: -243px;
+}
+</style>
