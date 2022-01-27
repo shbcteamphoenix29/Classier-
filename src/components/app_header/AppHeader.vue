@@ -4,11 +4,19 @@
       <img src="../../assets/classier_logo.svg" alt="app company logo" />
     </div>
     <ul class="flex-grow flex justify-center space-x-6 capitalize font-body">
-      <li class="hover:underline hover:text-primary cursor-pointer">men</li>
-      <li class="hover:underline hover:text-primary cursor-pointer">Women</li>
-      <li class="hover:underline hover:text-primary cursor-pointer">Kids</li>
-      <li class="hover:underline hover:text-primary cursor-pointer">accessories</li>
-      <li class="hover:underline hover:text-primary cursor-pointer">Contact Us</li>
+      <li class="hover:underline hover:text-primary cursor-pointer">
+        <router-link :to="{ name: 'men' }">men</router-link>
+      </li>
+      <li class="hover:underline hover:text-primary cursor-pointer">
+        <router-link :to="{ name: 'women' }">women</router-link>
+      </li>
+      <li class="hover:underline hover:text-primary cursor-pointer">
+        <router-link :to="{ name: 'kids' }">kids</router-link>
+      </li>
+      <li class="hover:underline hover:text-primary cursor-pointer">
+        <router-link :to="{ name: 'accessories' }">accessories</router-link>
+      </li>
+      <li class="hover:underline hover:text-primary cursor-pointer">contact us</li>
     </ul>
     <div class="flex items-center space-x-8">
       <AccountIcon title="user profile" fillColor="#34B7D2" class="cursor-pointer" />
@@ -31,3 +39,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+nav a.router-link-exact-active {
+  border-bottom: 2px solid #000;
+}
+</style>

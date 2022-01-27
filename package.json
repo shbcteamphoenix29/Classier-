@@ -17,6 +17,7 @@
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
     "vue": "^2.6.11",
+    "vue-fragment": "^1.5.2",
     "vue-loading-skeleton": "^1.1.9",
     "vue-material-design-icons": "^5.0.0",
     "vue-router": "^3.2.0",

@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import Register from '../views/Register.vue';
 import Login from '../views/Login.vue';
+import categoryRoutes from '../utils/router/category-routes';
 
 Vue.use(VueRouter);
 
@@ -25,6 +26,12 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: Login,
+  },
+  {
+    path: '/category',
+    name: 'Category',
+    component: () => import(/* webpackChunkName: "category" */ '../views/Category.vue'),
+    children: categoryRoutes,
   },
 ];
 

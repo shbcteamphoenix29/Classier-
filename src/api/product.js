@@ -38,4 +38,36 @@ const fetchProductCategories = async () => {
   return [];
 };
 
-export { fetchHotDeals, fetchProductCategories };
+/**
+ * @returns {Promise<Array>}
+ * @description
+ * Fetches products by category from an API online.
+ * @see https://fakestoreapi.com/products/category/jewelery?sort=desc
+ */
+
+const fetchProductsByCategory = async (category) => {
+  let categoryName = category;
+  if (category === 'men') {
+    categoryName = "men's clothing";
+  } else if (category === 'women') {
+    categoryName = "women's clothing";
+  } else if (category === 'accessories') {
+    categoryName = 'jewelery';
+  } else {
+    categoryName = 'electronics';
+  }
+  const { data: products } = await axios.get(
+    `https://fakestoreapi.com/products/category/${categoryName}?&limit=10`
+  );
+  if (Array.isArray(products)) {
+    return products.map((product) => ({
+      productId: product.id,
+      productTitle: product.title,
+      productPrice: product.price,
+      productImage: product.image,
+    }));
+  }
+  return [];
+};
+
+export { fetchHotDeals, fetchProductCategories, fetchProductsByCategory };
